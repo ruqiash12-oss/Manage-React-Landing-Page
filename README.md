@@ -58,16 +58,20 @@ Users should be able to:
 #### Example code snippet:
 
 ```jsx
-<form onSubmit={handleSubmit}>
-  <input
-    type="email"
+<form onSubmit={handleSubscribe}>
+ <div className="input-container">
+   <input
+    className={error ? 'input-box error' : 'input-box'}
+    type="text"
+    placeholder="Updates in your inbox..."
     value={email}
-    onChange={handleChange}
-    placeholder="Updates in your inbox…"
-    required
+    onChange={handleEmailChange}
   />
-  <button type="submit">Go</button>
-  {error && <span className="error">{error}</span>}
+  {error && <span className="error-message">Please enter a valid email address.</span>}
+   </div>
+  <button className="btn-go" type="submit">
+    Go
+  </button>
 </form>
 ```
 
