@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add your solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add your live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://www.frontendmentor.io/solutions/manage-react-landing-page-A8MHNZ17sH)
+- Live Site URL: https://ruqiash12-oss.github.io/Manage-React-Landing-Page/
 
 ## My process
 
