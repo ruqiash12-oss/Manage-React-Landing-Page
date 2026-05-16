@@ -1,0 +1,156 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 0 60px 0;
+  position: relative;
+  margin: 70px;
+}
+.background-image-mobile{
+  display: none;
+}
+.hero-content {
+  max-width: 480px;
+  z-index: 2;  
+}
+.hero-content h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #232943;
+  margin-bottom: 24px;
+  line-height: 1.15;
+}
+.hero-content p {
+  color: #acaeb5;
+  font-size: 1.4rem;
+  margin-bottom: 30px; 
+}
+.btn-get-started {
+  background: #f25f3a;
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  padding: 14px 36px;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 4px 16px rgba(242, 95, 58, 0.1);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn-get-started:hover {
+  background: #fb8d62;
+}
+
+.hero-image-container {
+  position: relative;
+  width: 550px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.background-image1 {
+  position: absolute;
+  top: -470px;
+  right: -300px;
+  z-index: -1;
+ 
+}
+
+.hero-image {
+  position: relative;
+  z-index: 2;
+
+  max-width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    margin: 48px 32px;
+    gap: 2rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2.4rem;
+  }
+
+  .hero-image-container {
+    width: min(480px, 100%);
+    height: 320px;
+  }
+
+  .background-image1 {
+    width: min(680px, 110vw);
+    top: -380px;
+    right: -240px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    padding: 40px 0 30px 0;
+    margin: 32px 20px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-image-container {
+    width: 100%;
+    height: 240px;
+    margin-bottom: 80px;
+  }
+
+  .background-image1 {
+    
+    top: -300px;
+    right: 10%;
+    transform: translateX(50%);
+  }
+
+  .hero-image {
+    width: min(420px, 100%);
+    
+  }
+  
+}
+
+@media (max-width: 480px) {
+  .hero {
+    margin: 24px 16px;
+    padding: 24px 0 20px 0;
+  }
+
+ .hero-content{
+  width: 90%;
+ }
+ .hero-content h1{
+  font-size: 3rem;
+ }
+  .hero-image-container {
+    height: 200px;
+  }
+  .background-image1 {
+   
+    top: -130%;
+    right: 30%;
+  }
+  .background-image-mobile{
+    display: block;
+    width: 80%;
+    z-index: -1;
+    right: -43%;
+    top: 227%;
+    position: absolute;
+  }
+  .hero-image{
+    margin-top: 70px;
+    width: 90%;
+  }
+}
